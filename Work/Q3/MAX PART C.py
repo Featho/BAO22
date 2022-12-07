@@ -12,11 +12,11 @@ for i in range(maxv+1):
     i += 1
     
 perms = list(product(list1, list2))
-print(perms)
 for i in range(len(perms)):
-    a = perms[i:0]
-    b = perms[i:1]
-    if a ** 2 + b ** 2 < n:
+    a = perms[i]
+    b = a[0]
+    c = a[1]
+    if b ** 2 + c ** 2 < n:
         count += 1
     i += 1
 
